@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project</title>
+</head>
+<body>
+    <div id="app">
+        <p>Please type a quantity:</p>
+        <input type="number" placeholder="Quantity" @input="onNewQuantity" v-model="quantity">
+        <p>{{ status }}</p>
+
+        <hr>
+
+        <p>Value on server: {{ quantityOnServer }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.prod.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
